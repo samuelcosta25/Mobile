@@ -49,6 +49,14 @@ class ListaTarefasApp extends StatelessWidget {
   }
 }
 
+void adicionarTarefa(String descricao){
+  _tarefas.add(Tarefa(descricao, false)); 
+  // Notifica os ouvintes (widgets)
+  notifyListeners();
+}
+
+
+
 class ListaTarefasScreen extends StatelessWidget {
   final TextEditingController _controller = TextEditingController();
 
