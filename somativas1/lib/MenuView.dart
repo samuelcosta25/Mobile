@@ -1,36 +1,44 @@
 import 'package:provider/provider.dart';
 import 'package:somativas1/MenuController.dart';
 import 'package:flutter/material.dart';
-//import 'package:flutter/material.dart';
 
 class MenuScreen extends StatelessWidget {
-  // Controlador para o campo de texto de nova tarefa
   final TextEditingController _controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // Barra superior do aplicativo
       appBar: AppBar(
         title: Text('Lista de Compras'),
       ),
-      // Corpo principal do aplicativo
       body: Column(
         children: [
-          // Campo de texto para adicionar nova tarefa
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              ElevatedButton(
+                onPressed: () {
+                  Provider.of<MenusController>(context, listen: false).limparTarefas();
+                },
+                child: Text('Excluir Todas as Tarefas'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  Provider.of<MenusController>(context, listen: false).atualizarLista();
+                },
+                child: Text('Atualizar Lista'),
+              ),
+            ],
+          ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: TextField(
               controller: _controller,
               decoration: InputDecoration(
                 labelText: 'Nova Tarefa',
-                // Ícone para adicionar tarefa ao pressionar o botão
                 suffixIcon: IconButton(
                   onPressed: () {
-                    // Chamando o método adicionarTarefa do Provider para atualizar o estado
-                    Provider.of<MenusController>(context, listen: false)
-                        .adicionarTarefa(_controller.text);
-                    // Limpar o campo de texto após adicionar a tarefa
+                    Provider.of<MenusController>(context, listen: false).adicionarTarefa(_controller.text);
                     _controller.clear();
                   },
                   icon: Icon(Icons.add),
@@ -38,28 +46,33 @@ class MenuScreen extends StatelessWidget {
               ),
             ),
           ),
-          // Lista de Menu usando um Consumer do Provider para atualização automática
           Expanded(
             child: Consumer<MenusController>(
               builder: (context, model, child) {
                 return ListView.builder(
                   itemCount: model.menus.length,
-                  itemBuilder: (context, index) {
+                  itemBuilder: (context, itemIndex) { // Mudança aqui: de index para itemIndex
                     return ListTile(
-                      // Exibição do texto da tarefa
-                      title: Text(model.menus[index].descricao),
-                      // Checkbox para marcar a tarefa como concluída
-                      trailing: Checkbox(
-                        value: model.menus[index].concluida,
-                        onChanged: (value) {
-                          // Chamando o método marcarComoConcluida do Provider para atualizar o estado
-                          model.marcarComoConcluida(index);
-                        },
+                      title: Text(model.menus[itemIndex].descricao),
+                      trailing: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Checkbox(
+                            value: model.menus[itemIndex].concluida,
+                            onChanged: (value) {
+                              model.marcarComoConcluida(itemIndex);
+                            },
+                          ),
+                          IconButton(
+                            icon: Icon(Icons.delete),
+                            onPressed: () {
+                              model.excluirTarefa(itemIndex);
+                            },
+                          ),
+                        ],
                       ),
-                      // Exclui a tarefa ao manter pressionado
                       onLongPress: () {
-                        // Chamando o método excluirTarefa do Provider para atualizar o estado
-                        model.excluirTarefa(index);
+                        model.excluirTarefa(itemIndex);
                       },
                     );
                   },
