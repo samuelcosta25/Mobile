@@ -1,0 +1,188 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "app_todolist",
+            "cwd": "app_todolist",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "app_todolist (profile mode)",
+            "cwd": "app_todolist",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "app_todolist (release mode)",
+            "cwd": "app_todolist",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "exemplo_persistencia",
+            "cwd": "exemplo_persistencia",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "exemplo_persistencia (profile mode)",
+            "cwd": "exemplo_persistencia",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "exemplo_persistencia (release mode)",
+            "cwd": "exemplo_persistencia",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "exemplo_variaveis_operadores",
+            "cwd": "exemplo_variaveis_operadores",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "exemplo_variaveis_operadores (profile mode)",
+            "cwd": "exemplo_variaveis_operadores",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "exemplo_variaveis_operadores (release mode)",
+            "cwd": "exemplo_variaveis_operadores",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "hello_world",
+            "cwd": "hello_world",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "hello_world (profile mode)",
+            "cwd": "hello_world",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "hello_world (release mode)",
+            "cwd": "hello_world",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "jogo_adivinha_flutter",
+            "cwd": "jogo_adivinha_flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "jogo_adivinha_flutter (profile mode)",
+            "cwd": "jogo_adivinha_flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "jogo_adivinha_flutter (release mode)",
+            "cwd": "jogo_adivinha_flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "lista_exercicios",
+            "cwd": "lista_exercicios",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "lista_exercicios (profile mode)",
+            "cwd": "lista_exercicios",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "lista_exercicios (release mode)",
+            "cwd": "lista_exercicios",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "meu_primeiro_app_flutter",
+            "cwd": "meu_primeiro_app_flutter",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "meu_primeiro_app_flutter (profile mode)",
+            "cwd": "meu_primeiro_app_flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "meu_primeiro_app_flutter (release mode)",
+            "cwd": "meu_primeiro_app_flutter",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "somativas1",
+            "cwd": "somativas1",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "somativas1 (profile mode)",
+            "cwd": "somativas1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "somativas1 (release mode)",
+            "cwd": "somativas1",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "to_do_list",
+            "cwd": "to_do_list",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "to_do_list (profile mode)",
+            "cwd": "to_do_list",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "to_do_list (release mode)",
+            "cwd": "to_do_list",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}
