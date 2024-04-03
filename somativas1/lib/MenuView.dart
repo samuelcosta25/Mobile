@@ -66,13 +66,11 @@ class MenuScreen extends StatelessWidget {
                           IconButton(
                             icon: Icon(Icons.delete),
                             onPressed: () {
-                              model.excluirTarefa(itemIndex);
                             },
                           ),
                         ],
                       ),
                       onLongPress: () {
-                        model.excluirTarefa(itemIndex);
                       },
                     );
                   },
