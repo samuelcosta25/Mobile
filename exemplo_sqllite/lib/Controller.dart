@@ -1,16 +1,18 @@
-//montagem da estrutura do banco de dados (CRUD)
-
-import 'package:exemplo_sqllite/model.dart';
+import 'Model.dart';
 import 'package:path/path.dart';
 import 'package:sqflite/sqflite.dart';
+
 
 class BancoDadosCrud {
   static const String DB_NOME = 'contacts.db'; // Nome do banco de dados
   static const String TABLE_NOME = 'contacts'; // Nome da tabela
   static const String
       CREATE_CONTACTS_TABLE_SCRIPT = // Script SQL para criar a tabela
-      "CREATE TABLE contacts(id INTEGER PRIMARY KEY, nome TEXT, email TEXT, telefone TEXT, email TEXT)";
- 
+      "CREATE TABLE IF NOT EXISTS contacts(id INTEGER PRIMARY KEY," +
+          "nome TEXT, email TEXT, telefone TEXT," +
+          "endereco TEXT)";
+
+  
   Future<Database> _getDatabase() async {
     return openDatabase(
       join(
@@ -34,7 +36,6 @@ class BancoDadosCrud {
     }
   }
 
-
   // Método para obter todos os contatos do banco de dados
   Future<List<ContatoModel>> getContacts() async {
     try {
@@ -42,12 +43,11 @@ class BancoDadosCrud {
       final List<Map<String, dynamic>> maps =
           await db.query(TABLE_NOME); // Consulta todos os contatos na tabela
 
-
       return List.generate(
         maps.length,
         (i) {
           return ContatoModel.fromMap(maps[
-              i]); // Converte os resultados da consulta para objetos ContatoModel
+              i]); // Converte os resultados da consulta para objetos ContactModel
         },
       );
     } catch (ex) {
@@ -55,7 +55,6 @@ class BancoDadosCrud {
       return [];
     }
   }
-
 
   // Método para atualizar um contato no banco de dados
   Future<void> update(ContatoModel model) async {
@@ -72,7 +71,6 @@ class BancoDadosCrud {
       return;
     }
   }
-
 
   // Método para excluir um contato do banco de dados
   Future<void> delete(int id) async {
