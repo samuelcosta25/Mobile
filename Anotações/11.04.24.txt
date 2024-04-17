@@ -1,6 +1,8 @@
 flutter create nome-do-projeto //criação do projoeto
 flutter pub add sqflite // adicionar dependencia: banco sqflite
 flutter pub add path // adicionar dependencia: path (caminhos)
+flutter pub add shared_preferences // adicionar dependencia: preferencias de usuario
+flutter pub get
 
 começar a codar:
 apagar o conteudo do main.dart e abrir o proprio main com a classe MyApp
