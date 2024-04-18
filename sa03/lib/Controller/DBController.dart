@@ -1,5 +1,5 @@
 import 'package:path/path.dart';
-import 'package:sa03/Model/UsuarioModel.dart';
+import '/Model/UsuarioModel.dart';
 import 'package:sqflite/sqflite.dart';
 
 class BancoDadosCrud {

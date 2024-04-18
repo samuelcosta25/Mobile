@@ -1,6 +1,5 @@
-
 import 'package:flutter/material.dart';
-import 'package:sa03/Model/TarefasModel.dart';
+import '/Model/TarefasModel.dart';
 
 class TarefasController extends ChangeNotifier {
   // Lista de tarefas

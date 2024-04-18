@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:sa03/Controller/DBController.dart';
-import 'package:sa03/Model/UsuarioModel.dart';
-import 'package:sa03/View/CadastroView.dart';
-import 'package:sa03/View/TarefasView.dart';
+import '/Controller/DBController.dart';
+import '/Model/UsuarioModel.dart';
+import '/View/CadastroView.dart';
+import '/View/TarefasView.dart';
 
 
 class LoginScreen extends StatelessWidget {

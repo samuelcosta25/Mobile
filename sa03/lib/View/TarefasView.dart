@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sa03/Controller/TarefasController.dart';
+import '/Controller/TarefasController.dart';
 
 class TarefasScreen extends StatelessWidget {
   // Controlador para o campo de texto de nova tarefa

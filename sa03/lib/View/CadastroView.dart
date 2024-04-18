@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sa03/Controller/DBController.dart';
-import 'package:sa03/Model/UsuarioModel.dart';
+import '/Controller/DBController.dart';
+import '/Model/UsuarioModel.dart';
 
 class CadastroScreen extends StatelessWidget {
   @override
