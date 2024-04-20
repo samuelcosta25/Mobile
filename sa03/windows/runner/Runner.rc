@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "sa03" "\0"
+            VALUE "FileDescription", "sa3_somativa" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "sa03" "\0"
+            VALUE "InternalName", "sa3_somativa" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "sa03.exe" "\0"
-            VALUE "ProductName", "sa03" "\0"
+            VALUE "OriginalFilename", "sa3_somativa.exe" "\0"
+            VALUE "ProductName", "sa3_somativa" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

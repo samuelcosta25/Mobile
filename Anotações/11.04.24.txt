@@ -2,6 +2,7 @@ flutter create nome-do-projeto //criação do projoeto
 flutter pub add sqflite // adicionar dependencia: banco sqflite
 flutter pub add path // adicionar dependencia: path (caminhos)
 flutter pub add shared_preferences // adicionar dependencia: preferencias de usuario
+flutter pub add path_provider // adicionar dependencia: path provider
 flutter upgrade // para atualização de versões do flutter (--force)
 flutter pub get // para atualizar dependencias instaladas
 flutter run //para rodar manualmente a aplicação
