@@ -1,0 +1,4 @@
+-HomePage() => lista de produtos - View
+    -Adicionar novos produtos
+        -Modelo (produtos) - Model
+        - Controller (produtos) - Controller
