@@ -6,6 +6,8 @@ class HomePage extends StatefulWidget {
 
   @override
   State<HomePage> createState() => _HomePageState();
+  
+  _HomePageState() {}
 }
 
 class HomePageState extends State<HomePage> {
@@ -26,7 +28,7 @@ class HomePageState extends State<HomePage> {
       ),
       body: Column(
         children: [
-          ElevatedButton(onPressed: onPressed: , child: Text("Recarregar")),
+          ElevatedButton(onPressed: onPressed, child: Text("Recarregar")),
           Expanded(
             child: ListView.builder(
               itemCount: _produtoController.produtos.length,

@@ -1,0 +1,3 @@
+json => vem de java script
+database flexivel, aonde é possivel armazenar colecoes e listas
+nao relacional
