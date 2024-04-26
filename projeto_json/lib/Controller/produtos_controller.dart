@@ -9,6 +9,8 @@ class ProdutoController {
     return _produtos;
   }
 
+  get jsonList => null;
+
   //Método set
   void setProdutos(List<Produto> produtos) {
     _produtos = produtos;
@@ -29,7 +31,8 @@ class ProdutoController {
       _produtos =
           jsonList.map<Produto>((json) => Produto.fromJson(json)).toList();
     } catch (e) {
-      produtos = [];
+      _produtos = [];
     }
+    return produtos;
   }
 }
