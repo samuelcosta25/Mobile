@@ -1,0 +1,23 @@
+[
+    {    
+        "Título": "O Fim da eternidade",
+        "Autor": "Isaac Asimov",
+        "Sinopse": "aqui está o texto de Sinopse do Fim da eternidade",
+        "Categoria": "Ficcao Cientifica",
+        "ISBN": "123"
+    },
+    {
+        "Título": "O morro dos ventos uivantes",
+        "Autor": "Emily Bronte",
+        "Sinopse": "aqui está o texto de Sinopse do O morro dos ventos uivantes",
+        "Categoria": "Terror",
+        "ISBN": "456"
+    },
+    {
+        "Título": "Memorias postumas de bras cubas",
+        "Autor": "Machado de Assis",
+        "Sinopse": "aqui está o texto de Sinopse do Memorias postumas de bras cubas",
+        "Categoria": "Romance",
+        "ISBN": "789"
+    }
+]

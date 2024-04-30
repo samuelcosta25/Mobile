@@ -1,0 +1,12 @@
+----------------------------------------------------------------
+PLANO DE NEGÓCIO
+----------------------------------------------------------------
+-Model:
+    -Livros (titulo, autor, sinopse, categoria, ISBN);
+
+-Controller:
+    -Livros (loadLivros a partir de um Json);
+
+View:
+    -Livros (Listar todos os livros do catálogo);
+    -Info dos livros (a partir de um toque no livro, será direcionado para as informaçaões do livro);
