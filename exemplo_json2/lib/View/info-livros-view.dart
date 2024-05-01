@@ -12,9 +12,13 @@ class LivroInfoPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Livro Info'),
       ),
-      body: Center(
-          child: Column(
-        children: [
+      body: Padding(
+        padding: const EdgeInsets.all(16.0),
+        child: Expanded(
+            child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+          Image.asset(info.capa),
           Text(info.titulo),
           Text(info.autor),
           Text(info.sinopse),
@@ -22,6 +26,7 @@ class LivroInfoPage extends StatelessWidget {
           Text("${info.isbn}"),
         ],
       )),
+      ),
     );
   }
 }

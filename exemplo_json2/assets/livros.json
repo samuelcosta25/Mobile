@@ -1,23 +1,26 @@
 [
     {    
-        "Título": "O Fim da eternidade",
-        "Autor": "Isaac Asimov",
-        "Sinopse": "aqui está o texto de Sinopse do Fim da eternidade",
-        "Categoria": "Ficcao Cientifica",
-        "ISBN": "123"
+        "titulo": "O Fim da eternidade",
+        "autor": "Isaac Asimov",
+        "sinopse": "aqui está o texto de Sinopse do Fim da eternidade",
+        "categoria": "Ficcao Cientifica",
+        "isbn": 123,
+        "capa": "assets/img/img1.png"
     },
     {
-        "Título": "O morro dos ventos uivantes",
-        "Autor": "Emily Bronte",
-        "Sinopse": "aqui está o texto de Sinopse do O morro dos ventos uivantes",
-        "Categoria": "Terror",
-        "ISBN": "456"
+        "titulo": "O morro dos ventos uivantes",
+        "autor": "Emily Bronte",
+        "sinopse": "aqui está o texto de Sinopse do O morro dos ventos uivantes",
+        "categoria": "Terror",
+        "isbn": 456,
+        "capa": "assets/img/img2.png"
     },
     {
-        "Título": "Memorias postumas de bras cubas",
-        "Autor": "Machado de Assis",
-        "Sinopse": "aqui está o texto de Sinopse do Memorias postumas de bras cubas",
-        "Categoria": "Romance",
-        "ISBN": "789"
+        "titulo": "Memorias postumas de bras cubas",
+        "autor": "Machado de Assis",
+        "sinopse": "aqui está o texto de Sinopse do Memorias postumas de bras cubas",
+        "categoria": "Romance",
+        "isbn": 789,
+        "capa": "assets/img/img3.png"
     }
 ]
