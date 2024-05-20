@@ -1,5 +1,7 @@
 import 'dart:convert';
 import 'dart:io';
+import 'package:path_provider/path_provider.dart';
+
 import '../Model/carros_model.dart';
 
 class CarrosController {
@@ -12,7 +14,7 @@ class CarrosController {
   // Método para adicionar carros ao arquivo Json
   void addCarro(Carros carros) {
     _carroList.add(carros);
-    saveCarrosFile();
+    saveCarrosToFile();
   }
 
   // Salvar no Json (load)
@@ -31,7 +33,7 @@ class CarrosController {
       String path = appDocDir.path;
       final file = File('$path/carros.json');
       final jsonList = jsonDecode(await file.readAsString());
-      _carroList = jsonList.map<Carro>((json) => Carro.fromJson(json)).toList();
+      _carroList = jsonList.map<Carros>((json) => Carros.fromJson(json)).toList();
     } catch (e) {
       _carroList = [];
     }
