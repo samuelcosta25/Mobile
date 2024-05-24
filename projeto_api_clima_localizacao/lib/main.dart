@@ -19,9 +19,8 @@ class MyApp extends StatelessWidget {
       home: HomeScreen(),
       routes: {
         '/home': (context) => HomeScreen(),
-        '/search': (context) => SearchScreen(),
+        '/search':(context) => SearchScreen(),
         '/favorites': (context) => FavoriteScreen(),
-        '/details_city': (context) => CityDetailScreen(city: city);
       },
     );
   }

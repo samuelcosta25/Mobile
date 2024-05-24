@@ -78,9 +78,9 @@ class _HomeScreenState extends State<HomeScreen> {
               children:[
                 Text(_controller.listWeather.last.city),
                 Text(_controller.listWeather.last.description),
-                Text((_controller.listWeather.last.temp-273).toString()),
-                Text((_controller.listWeather.last.tempMin-273).toString()),
-                Text((_controller.listWeather.last.tempMax-273).toString()),
+                Text((_controller.listWeather.last.temp-273).toStringAsFixed(2)),
+                Text((_controller.listWeather.last.tempMin-273).toStringAsFixed(2)),
+                Text((_controller.listWeather.last.tempMax-273).toStringAsFixed(2)),
                 IconButton(
                 icon:  const Icon(Icons.refresh),
                 onPressed: () {
