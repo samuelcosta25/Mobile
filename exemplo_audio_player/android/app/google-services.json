@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "815515195827",
+    "project_id": "teste-firebase-samuel25",
+    "storage_bucket": "teste-firebase-samuel25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815515195827:android:cb752ecc75d28099ce93c6",
+        "android_client_info": {
+          "package_name": "br.com.samuel25"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIKNeqHOFMAFUmM3Mcec70Oc2l60hQLe8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
