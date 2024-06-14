@@ -12,3 +12,4 @@ class AudioModel {
         return AudioModel(
             map['title'], map['artist'], map['url']);
     }
+}

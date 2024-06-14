@@ -1,0 +1,18 @@
+flutter 
+
+firebase login;
+- caso ja esteja logado em uma conta:
+firebase login --reauth;
+flutterfire configure:
+- selecionar o projeto determinado ou criar novo projeto;
+
+dependencias para utilização do firebase:
+flutter pub add..:
+firebase_core
+firebase_auth
+cloud_firestore
+firebase_messaging
+
+
+
+
